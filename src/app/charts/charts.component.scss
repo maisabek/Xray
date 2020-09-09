@@ -1,0 +1,30 @@
+.bo{margin-left: 20%;}
+#bar-example,
+#donut-example,
+#myfirstchart,
+#area-example{
+     margin-top: 20px;
+    border: white;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    padding: 15px 15px 30px 30px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px ){/* mobile & tablet*/
+    .bo{margin-left: 2%;}
+    #bar-example,
+#donut-example,
+#myfirstchart,
+#area-example{width:90%}
+}
+@media (min-width: 768px) and (max-width:991px){ /* small screen */ 
+    .bo{margin-left: 2%;}   
+    #bar-example,
+    #donut-example,
+    #myfirstchart,
+    #area-example{width:90%}
+}

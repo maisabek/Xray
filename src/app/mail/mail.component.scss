@@ -1,0 +1,160 @@
+.bo{margin-left: 20%;}
+.mail-navbar,.mail-message{
+    margin-top: 35px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 15px 15px 30px 30px;
+    padding-bottom: 15px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.mail-navbar{
+    float:left;
+    width:23%
+}
+.mail-navbar ul i{margin-right: 5%;}
+.mail-message{
+    float: right;
+    width:70%;
+    margin-right: 4%;
+}
+.mail-navbar ul li{list-style-type: none;padding-top: 24px;}
+.mail-navbar ul li{color:gray;font-size: 17px;cursor: pointer;}
+.mail-navbar ul li:hover{color:#089bab;}
+.mail-navbar button{
+    background: linear-gradient(to right, rgba(8, 155, 171, 1) 0%, rgba(13, 181, 200, 1) 100%);
+    border-color: #089bab;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+    margin-left: 10%;
+    padding: 12px;
+    outline: none;
+    border-radius: 7px;
+}
+.mail-navbar h5{color:gray}
+.mail-message input{
+width:65%;
+border:none;
+outline: none;
+}
+.mail-message-search{border:1px solid rgb(236, 234, 234);width:65%;padding:8px;border-radius: 10px;}
+.fa-search{margin-left: 30%;}
+.icon1{margin-left:-4%}
+.icon1 li{float:left;list-style-type: none;}
+.icon2{margin-right:2%}
+.icon2 li{float:right;list-style-type: none;}
+.icon1 li a,.icon2 li a{
+    color: #089bab;
+    background: #ceebee;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    margin: 0 3px;
+    padding: 6px;
+    cursor: pointer;
+}
+li.selected{
+    background-color: #ceebee;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-left: -6%;
+    margin-right: 31%;
+    padding-bottom: 14px;
+    /* height: 67px; */
+    /* padding: 33px; */
+    text-align: center;
+   }
+   .name,.content,.time
+   {float: left;margin-left: 0%;margin-top: 20px;}
+   .content{width: 58%;}
+   .name{width: 30%;}
+   .time{width: 10%;}
+   .name-star,.name-h6{float: left;}
+   .line{background-color: rgb(240, 240, 240);width:100%;height: 2px;}
+.a{color:rgb(251, 166, 7)}
+.snoozed-first,.inbox-first{color: #089bab;}
+.hidden-icon{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -61px;
+    background-color: white;
+    display: none;
+    margin-right: 0%;
+    transition: all .5s ease-in;
+}
+.front{transition: all 0.5s ease-in;}
+// .inbox .front:hover .hidden-icon{
+//     display: block;
+// }
+.front:hover,.front:hover .hidden-icon{
+    display: block;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 10px 20px 20px;
+    padding-bottom: 15px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.fa-long-arrow-left{background-color: white;}
+.back{
+    position: absolute;
+    // height: 19%;
+    width: 56%;
+    margin-left: -2%;
+    margin-top: -95px;
+    background-color: white;
+    display: none;
+    color: gray;
+}
+.back h5{
+    margin-top: 43px;
+    margin-bottom: 38px;
+    color:gray;
+}
+.back img{
+    border-radius: 50%;
+    margin-bottom: 57px
+}
+.back-end-p{
+    margin-bottom: 723px;
+}
+.back-image,.back-header{
+    float: left;
+}
+   .clear-fix{clear: both;}
+   @media (max-width: 767px ){/* mobile & tablet*/
+    .bo{margin-left: 2%;}
+    .mail-navbarbutton {margin-left: -16%;}
+    .mail-navbar{
+        width: 84%;
+        margin-left: 6%;
+    }
+    .mail-message{
+        width: 91%;
+        margin-right: 6%;}
+   }
+   @media (min-width: 768px) and (max-width:991px){ /* small screen */ 
+    .bo{margin-left: 2%;}
+    .mail-navbar{
+        width: 84%;
+        margin-left: 6%;
+    }
+    .mail-message{
+        width: 91%;
+        margin-right: 6%;}
+   }
+   @media (min-width: 992px) and (max-width:1199px) { /* medium screen */
+ 
+   }

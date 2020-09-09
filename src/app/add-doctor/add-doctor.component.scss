@@ -1,0 +1,77 @@
+.bo{margin-left: 20%;}
+.user,.user-info{
+    margin-top: 20px;
+    border: white;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    padding: 15px 15px 30px 30px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.line{
+    background-color: rgb(235, 233, 233);
+    height: 1px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.user-image img{border-radius: 50%;}
+.p-image {
+    position: static;
+    text-align: left;
+    display: block;
+    height: auto;
+    width: auto;
+    background: transparent;
+    margin-top: 20px;
+}
+
+.iq-bg-primary {
+    background: #ceebee !important;
+    color: #089bab !important;
+}
+.file-upload {
+    display: none;
+}
+.user input,.user-info input{
+    height: 36px;
+    line-height: 45px;
+    background: transparent;
+    border: 1px solid #d7dbda;
+    font-size: 14px;
+    color: #a09e9e;
+    border-radius: 7px;
+    outline: none;
+    width: 99%;
+}
+::placeholder{padding-left: 10px;}
+.user span{color: rgb(160, 160, 160);}
+.user-form{margin-top: 22px;}
+.user-form select{outline: none; color: #a09e9e;}
+.btn-btn-info{
+    background: linear-gradient(to right, rgba(13, 181, 200, 1) 0%, rgba(8, 155, 171, 1) 100%) !important;
+    color: #fff;
+    border-color: #007bff;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 2%;
+}
+.clear-fix{clear: both;}
+.group1,.group3,.group7,.group9,.group14{float:left};
+.group2,.group4,.group8,.group11,.group15{float: right;}
+@media (max-width: 767px ){/* mobile & tablet*/
+    .bo{margin-left: 2%;}
+}
+@media (min-width: 768px) and (max-width:991px){ /* small screen */ 
+    .bo{margin-left: 2%;}
+    .user{width:60%}
+}
+@media (min-width: 992px) and (max-width:1199px) { /* medium screen */
+
+}

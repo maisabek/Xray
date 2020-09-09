@@ -1,0 +1,121 @@
+.bo{margin-left: 20%;}
+.clear-fix{
+    clear: both;
+}
+.patient-info11,.patient-info12,.patient-info2{
+    background: #fff;
+    // width: 50%;
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 40px;
+    overflow: hidden;
+    padding: 15px 15px 30px 30px;
+    padding-bottom: 15px;
+box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+-o-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+-ms-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.patient-info11{width: 25%;}
+.patient-info12{margin-top: 304px;width: 25%;}
+.patient-info1{float: left;}
+.patient-info2{
+    float: right;
+     margin-left: 27%;
+    width: 50%;
+}
+.patient-info11-weight,
+.patient-info11-line,
+.patient-info11-height,
+.patient-info11-goal{float: left;margin-left: 25px;}
+.patient-info11-line{
+    background-color: gainsboro;
+    width: 2px;
+    height: 71px;
+}
+.patient-info11 img{margin-left: 38%;border-radius: 50%;}
+.patient-info11-h4{margin-left: 33%;}
+.patient-info11-p{ margin-left: 26%;color: gray;}
+.patient-info11-weight p
+,.patient-info11-height p
+,.patient-info11-goal p{color: #089bab;}
+.patient-info11-goal h5{color:  #ffb177;}
+.patient-info2-head{    
+    background: linear-gradient(to right, rgba(8, 155, 171, 1) 0%, rgba(13, 181, 200, 1) 100%);
+    padding: 20px;
+    border-radius: 20px;
+}
+.patient-info2-head-p{float: left;color: white;margin-top: 11px;}
+.patient-info2-head-img{float: right;background-color: white;border-radius: 40%;}
+.patient-info2-head-img img{padding: 15px;}
+.popular-training{margin-top: 30px;margin-bottom: 30px;}
+.popular-training1-img{float: left;background-color: #ceebee;border-radius: 50%;}
+.popular-training1-img img{padding: 15px;}
+.popular-training1-info{float: right;margin-left: 10px;}
+.popular-training1-info p{color: gray;}
+.popular-training-h4{color: #089bab;margin-left: 18px;margin-bottom: 40px;}
+.popular-training1{float: left;margin-left: 20px;}
+.patient-info12-second{float: left;}
+.patient-info12-first{float: right;}
+.patient-info12-circle{margin-right: 55px;margin-top: 13px;}
+.patient-info12-circle-inside h5{margin-top: 19px;} 
+.patient-info12-circle-inside{    
+    width: 151%;
+    border: 6px solid rgb(231, 229, 229);
+    color: rgb(146, 144, 144);
+    text-align: center;}
+.patient-info12-second span{color:rgb(146, 144, 144);}
+.patient-info12-circle-inside2{
+    margin-top: 1px;
+    position: absolute;
+    border-radius: 36%;
+    width: 29%;
+    height: 99px;
+    border-left: 6px solid #81dae4;
+}
+.patient-info12-circle-inside21{
+     border-right: 6px solid #81dae4;
+     margin-top: 1px;
+     position: absolute;
+     border-radius: 36%;
+     width: 29%;
+     height: 99px;
+    }
+.carbs,.protien,.fat{float: left;font-size:18px;color:#089bab;}
+.protien,.fat{margin-left: 12%;}
+.carbs .line1,.protien .line1,.fat .line1{    
+    width: 72px;
+    background-color: rgb(218, 218, 218);
+    height: 4px;
+    border-radius: 8px;
+}
+.carbs .line2,.protien .line2,.fat .line2{
+    background-color: #0addf5;
+    width: 40px;
+    height: 4px;
+    margin-top: -4px;
+    animation: fadeInRightSmall .5s ease-in;  
+}
+.protien .line2{background-color: #dc3545;width: 47px;}
+.carbs .line2{background: linear-gradient(to right, rgba(8, 155, 171, 1) 0%, rgba(13, 181, 200, 1) 100%);width:55px}
+.big-line{margin-top:25px;width: 100%;height: 2px; background-color: rgb(241, 238, 238);}
+@media (max-width: 767px ){/* mobile & tablet*/
+    .bo{margin-left: 2%;}
+    .patient-info11,.patient-info12{width: 90%;margin-left: 2%;}
+    .patient-info1,.patient-info2{float:none}
+
+    .patient-info2{
+        margin-top: 150%;
+        width: 90%;
+        margin-left: 2%;
+    }
+
+}
+@media (min-width: 768px) and (max-width:991px){ /* small screen */ 
+    .bo{margin-left: 2%;}
+    .patient-info1,.patient-info1{float:none}
+}
+@media (min-width: 992px) and (max-width:1199px) { /* medium screen */
+
+}

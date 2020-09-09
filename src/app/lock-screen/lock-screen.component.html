@@ -1,0 +1,38 @@
+<div class="bo">
+    <div class="carou">
+      <div class="skitter skitter-large">
+        <ul>
+          <li>
+            <a href="#cut"><img src="assets/images/1.png" class="cut" /></a>
+            <div class="label_text"><p>cut</p></div>
+          </li>
+          <li>
+            <a href="#swapBlocks"><img src="assets/images/2.png" class="swapBlocks" /></a>
+            <div class="label_text"><p>swapBlocks</p></div>
+          </li>
+          <li>
+            <a href="#swapBarsBack"><img src="assets/images/3.png" class="swapBarsBack" /></a>
+            <div class="label_text"><p>swapBarsBack</p></div>
+          </li>
+        </ul>
+        
+      </div>
+      <h5>Manage Your Order</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="heade">
+      <img src="assets/images/01.jpg">
+    <h5>Hi ! Michael Smith</h5>
+    <p>Enter your password to access.</p>
+    <form [formGroup]='contactsForm' (ngSubmit)='saveform()'>
+        <div class="form-group group1">
+          
+         <input type="text" placeholder="Enter Your Password" formControlName='userEmail' class="form-contol">
+       <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">UserEmail invalid</div>
+        </div>
+        <a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info">Login</button></a>
+      </form></div>
+
+
+</div>
+
+</div>

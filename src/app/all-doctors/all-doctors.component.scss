@@ -1,0 +1,104 @@
+body{background: #aad6db;}
+.bo{ margin-left: 20%;}
+.doctor-list{
+    margin-top: 42px;
+    position: relative;
+    background: #fff;
+    width: 96%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px 15px 30px 30px;
+    padding-bottom: 15px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.doctor1,.doctor2,.doctor3,.doctor4{
+    float: left;
+    width: 22%;
+    margin-top: 20px;
+    margin-left: 2%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px 15px 30px 30px;
+    padding-bottom: 15px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.doctor-list h4{color:gray}
+.doctor2,.doctor3,.doctor4{margin-top: 55px;}
+.doctor4{margin-bottom: 20px;}
+.doctors img{
+    border-radius: 50%;
+    margin-left: 23%;
+    width: 90px;
+}
+.doctors h5{
+    color: rgb(82, 82, 82);
+    margin-top: 20px;
+    margin-left: 22%;
+    font-weight: lighter;
+    
+}
+.doctor-a{
+    color:#089bab;
+    margin-left: 20%;
+    margin-top: -15px;
+    cursor: pointer;
+}
+.doctor-p1{ color: rgb(161, 159, 159);}
+.doctor-p{
+    color: rgb(161, 159, 159);
+    margin-left: 20%;
+}
+.ic li{
+    float: left;
+    list-style-type: none;
+}
+.ic li a{
+    color: #089bab;
+    background: #ceebee;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    margin: 0 3px;
+    padding: 6px;
+}
+.doctors button{
+    background: linear-gradient(to right, rgba(8, 155, 171, 1) 0%, rgba(13, 181, 200, 1) 100%);
+    border-color: #089bab;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+    padding: 6px;
+    margin-left: 19%;
+    outline: none;
+    border-radius: 7px;
+
+}
+.clear-fix{clear: both;}
+@media (max-width: 767px ){/* mobile & tablet*/
+    .bo{margin-left: 2%;}
+    .doctor1,.doctor2,.doctor3,.doctor4{
+        width: 80%;
+    margin-left: 7%;
+    }
+}
+@media (min-width: 768px) and (max-width:991px){ /* small screen */ 
+    .bo{margin-left: 2%;}
+    .doctor1,.doctor2,.doctor3,.doctor4{
+        width: 39%;
+    margin-left: 7%;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px) { /* medium screen */
+
+}

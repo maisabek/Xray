@@ -1,0 +1,174 @@
+<div class="bo">
+    <app-navbar></app-navbar>
+    <div class="container">
+        <div class="row">
+<div class="user col-md-3">
+<h5>Add New User</h5>
+<div class="line"></div>
+<div class="user-image">
+<img src="assets/images/01.jpg"></div>
+<div class="p-image">
+    <a href="javascript:void();" class="upload-button btn iq-bg-primary">File Upload</a>
+    <input class="file-upload" type="file" accept="image/*">
+ </div>
+<span>Only .jpg .png .jpeg allowed</span><br>
+<form [formGroup]='contactsForm' (ngSubmit)='saveform()' class="user-form">
+    <div class="form-group ">
+        <label>User Role:</label><br>
+        <select class="form-control">
+            <option selected>Doctor</option>
+             <option *ngFor="let i of roles">{{i}}</option>
+         </select>
+   <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">must <select name="" id=""></select></div> -->
+    </div>
+  
+    <div class="form-group ">
+      <label>Facebook Url:</label><br>
+   <input class="form-control" type="text" placeholder="Facebook Url" formControlName='userEmail' class="form-contol">
+ <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">invalid</div>
+  </div>
+
+<div class="form-group">
+ <label>Twitter Url:</label><br>
+  <input type="text" placeholder="Twitter Url" formControlName='password' class="form-contol">
+  <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+
+ </div>
+
+ <div class="form-group ">
+    <label>Instagram Url:</label><br>
+     <input type="text" placeholder="Instagram Url" formControlName='password' class="form-contol">
+     <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+   
+    </div>
+    <div class="form-group ">
+        <label>Linkedin Url:</label><br>
+         <input type="text" placeholder="Linkedin Url" formControlName='password' class="form-contol">
+         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+       
+        </div>
+</form>
+
+</div>
+<div class="user-info col-md-8">
+<h5>New User Information</h5>
+<div class="line"></div>
+
+<form [formGroup]='contactsForm' (ngSubmit)='saveform()' class="user-form">  
+    <div class="form-group group1 col-md-6">
+      <label>First Name:</label><br>
+   <input class="form-control" type="text" placeholder="First Name" formControlName='userEmail' class="form-contol">
+ <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">invalid</div>
+  </div>
+
+<div class="form-group group2 col-md-6">
+ <label>Last Name:</label><br>
+  <input type="text" placeholder="Last Name" formControlName='password' class="form-contol">
+  <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+
+ </div>
+<div class="clear-fix"></div>
+ <div class="form-group group3 col-md-6">
+    <label>Street Address 1:</label><br>
+     <input type="text" placeholder="Street Address 1" formControlName='password' class="form-contol">
+     <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>  
+    </div>
+    <div class="form-group group4 col-md-6">
+        <label>Street Address 2:</label><br>
+         <input type="text" placeholder="Street Address 2" formControlName='password' class="form-contol">
+         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+    </div>
+         <div class="clear-fix"></div>
+
+            <div class="form-group group5 col-md-12">
+                <label>Department Name:</label><br>
+                 <input type="text" placeholder="Department Name" formControlName='password' class="form-contol">
+                 <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+               
+                </div>
+
+                <div class="form-group group6 col-md-12">
+                    <label>Country:</label><br>
+                    <select class="form-control">
+                        <option selected>Doctor</option>
+                         <option *ngFor="let i of roles">{{i}}</option>
+                     </select>
+               <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">must <select name="" id=""></select></div> -->
+                </div>
+
+                <div class="form-group group7 col-md-6">
+                    <label>Mobile Number:</label><br>
+                     <input type="text" placeholder="Mobile Number" formControlName='password' class="form-contol">
+                     <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                   
+                    </div>
+         
+
+                <div class="form-group group8 col-md-6">
+                    <label>Alternate Contact:</label><br>
+                     <input type="text" placeholder="Alternate Contact" formControlName='password' class="form-contol">
+                     <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                   
+                    </div>
+                    <div class="clear-fix"></div>
+
+                    <div class="form-group group9 col-md-6">
+                        <label>Email:</label><br>
+                         <input type="text" placeholder="Email" formControlName='password' class="form-contol">
+                         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                       
+                        </div>
+                        <div class="form-group group11 col-md-6">
+                            <label>Pin Code:</label><br>
+                             <input type="text" placeholder="Pin Code" formControlName='password' class="form-contol">
+                             <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                           
+                        </div>
+                        <div class="clear-fix"></div>
+                        <div class="form-group group12 col-md-12">
+                            <label>Town/City:</label><br>
+                             <input type="text" placeholder="Town/City" formControlName='password' class="form-contol">
+                             <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                           
+                            </div> 
+                            <div class="form-group group13 col-md-12">
+                                <label>User Name:</label><br>
+                                 <input type="text" placeholder="User Name" formControlName='password' class="form-contol">
+                                 <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                               
+                                </div>   
+                                <div class="form-group group14 col-md-6">
+                                    <label>Password:</label><br>
+                                     <input type="password" placeholder="Password" formControlName='password' class="form-contol">
+                                     <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                                   
+                                    </div>   
+                                    <div class="form-group group15 col-md-6">
+                                        <label>Repeat Password:</label><br>
+                                         <input type="text" placeholder="Repeat Password:" formControlName='password' class="form-contol">
+                                         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                                       
+                                        </div>  
+                                        <div class="clear-fix"></div> 
+                                        <a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info">Add New User</button></a>
+                                         
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+<app-footer></app-footer>
+
+</div>

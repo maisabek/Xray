@@ -1,0 +1,278 @@
+<div class="bo">
+    <app-navbar></app-navbar>
+  <div class="links">
+      <ul>
+          <li data-class="Personal-Information" class="selected"><a>Personal Information</a></li>
+          <li data-class="change-pass"><a>Change Password</a></li>
+          <li data-class="Email-and-SMS"><a>Email and SMS</a></li>
+          <li data-class="Manage-Contact"><a>Mange Contact</a></li>
+    <div class="clear-fix"></div>
+      </ul>
+  </div>  
+  <div class="Personal-Information">
+      <h5>Personal Information</h5>
+      <div class="line"></div>
+      <div class="container">
+          <div class="row">   
+      <div class="Personal-Information-img-all col-md-4">
+        <div class="Personal-Information-img"><img src="assets/images/11.png"></div>
+        <div class="p-image">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+                  <input class="file-upload" type="file" accept="image/*">
+       </div></div>
+      <div class="mail-message-search col-md-5">
+        <input type="search" placeholder="Search">
+         <a class="search-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+      </div>
+    </div>
+</div>
+    <form [formGroup]='contactsForm' (ngSubmit)='saveform()' class="user-form">  
+        <div class="form-group group1 col-md-6">
+          <label>First Name:</label><br>
+       <input class="form-control" type="text" placeholder="First Name" formControlName='userEmail' class="form-contol">
+     <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">invalid</div>
+      </div>
+    
+    <div class="form-group group2 col-md-6">
+     <label>Last Name:</label><br>
+      <input type="text" placeholder="Last Name" formControlName='password' class="form-contol">
+      <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+    
+     </div>
+    <div class="clear-fix"></div>
+     <div class="form-group group3 col-md-6">
+        <label>User Name:</label><br>
+         <input type="text" placeholder="User Name" formControlName='password' class="form-contol">
+         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>  
+        </div>
+        <div class="form-group group4 col-md-6">
+            <label>City:</label><br>
+             <input type="text" placeholder="City" formControlName='password' class="form-contol">
+             <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+        </div>
+             <div class="clear-fix"></div>
+    
+                    <div class="form-group group6 col-md-12">
+                        <label>Country:</label><br>
+                        <select class="form-control">
+                            <option selected>USA</option>
+                             <option *ngFor="let i of Country">{{i}}</option>
+                         </select>
+                   <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">must <select name="" id=""></select></div> -->
+                    </div>
+    
+                    <div class="form-group group7 col-md-6">
+                        <label>Mobile Number:</label><br>
+                         <input type="text" placeholder="Mobile Number" formControlName='password' class="form-contol">
+                         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                       
+                        </div>
+             
+    
+                    <div class="form-group group8 col-md-6">
+                        <label>Alternate Contact:</label><br>
+                         <input type="text" placeholder="Alternate Contact" formControlName='password' class="form-contol">
+                         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                       
+                        </div>
+                        <div class="clear-fix"></div>
+    
+                        <div class="form-group group9 col-md-6">
+                            <label>Email:</label><br>
+                             <input type="text" placeholder="Email" formControlName='password' class="form-contol">
+                             <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                           
+                            </div>
+                            <div class="form-group group11 col-md-6">
+                                <label>Pin Code:</label><br>
+                                 <input type="text" placeholder="Pin Code" formControlName='password' class="form-contol">
+                                 <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                               
+                            </div>
+                            <div class="clear-fix"></div>
+                            <div class="form-group group12 col-md-12">
+                                <label>Town/City:</label><br>
+                                 <input type="text" placeholder="Town/City" formControlName='password' class="form-contol">
+                                 <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                               
+                                </div> 
+                                <div class="form-group group13 col-md-12">
+                                    <label>Address:</label><br>
+                                     <input type="text" placeholder="Address" formControlName='password' class="form-contol">
+                                     <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                                   
+                                    </div>   
+                                    <div class="form-group group14 col-md-6">
+                                        <label>Password:</label><br>
+                                         <input type="password" placeholder="Password" formControlName='password' class="form-contol">
+                                         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                                       
+                                        </div>   
+                                        <div class="form-group group15 col-md-6">
+                                            <label>Repeat Password:</label><br>
+                                             <input type="text" placeholder="Repeat Password:" formControlName='password' class="form-contol">
+                                             <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">invalid</div>
+                                           
+                                            </div>  
+                                            <div class="clear-fix"></div> 
+    <a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info">Submit</button></a>
+    <a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info btn-info2">Cancel</button></a>
+                                        
+    </form>
+
+  </div>
+
+<div class="change-pass">
+    <h5>Change Password</h5>
+    <div class="line"></div>
+    <form [formGroup]='contactsForm' (ngSubmit)='saveform()'>
+        <div class="form-group col-md-12">
+            <label>
+              Current Password</label><br>
+         <input type="password"  formControlName='userEmail' class="form-contol">
+       <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">UserEmail invalid</div>
+        </div>
+      
+      <div class="form-group col-md-12">
+       <label>New Password</label>
+        <input type="password" formControlName='password' class="form-contol">
+        <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">Password Must Start captail Latter</div>
+      
+       </div>
+       <div class="form-group col-md-12">
+        <label>Verify Password</label>
+         <input type="password" formControlName='password' class="form-contol">
+         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">Password Must Start captail Latter</div>
+       
+        </div>
+      <a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info">Submit</button></a>
+      <a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info btn-info2">Cancel</button></a>
+
+    </form>
+</div>
+<div class="Email-and-SMS">
+    <h5>Email and SMS</h5>
+    <div class="line"></div>
+    <form [formGroup]='contactsForm' (ngSubmit)='saveform()'>
+        <div class="form-group col-md-12">
+            <div class="group1">
+            <label>Email Notification:</label></div>
+            <div class="col-md-9 custom-control custom-switch group2">
+                <input type="checkbox" class="custom-control-input" id="emailnotification" checked="">
+                <label class="custom-control-label" for="emailnotification"></label>
+            </div>
+            <div class="clear-fix"></div>
+    </div>
+      
+    <div class="form-group col-md-12">
+        <div class="group1">
+        <label>SMS Notification:</label></div>
+        <div class="col-md-9 custom-control custom-switch group2">
+            <input type="checkbox" class="custom-control-input" id="emailnotification" checked="">
+            <label class="custom-control-label" for="emailnotification"></label>
+        </div>
+        <div class="clear-fix"></div>
+</div>
+  
+       <div class="form-group col-md-12">
+           <div class="group1">
+        <label>When To Email</label></div>
+        <div class="col-md-9 group2">
+            <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input" id="email01">
+               <label class="custom-control-label" for="email01">You have new notifications.</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input" id="email02">
+               <label class="custom-control-label" for="email02">You're sent a direct message</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input" id="email03" checked="">
+               <label class="custom-control-label" for="email03">Someone adds you as a connection</label>
+            </div>
+         </div>
+         <div class="clear-fix"></div>
+       
+        </div>
+        <div class="form-group col-md-12">
+            <div class="group1">
+            <label>When To Escalate Emails</label></div>
+            <div class="col-md-9 group2">
+                <div class="custom-control custom-checkbox">
+                   <input type="checkbox" class="custom-control-input" id="email01">
+                   <label class="custom-control-label" for="email01">You have new notifications.</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                   <input type="checkbox" class="custom-control-input" id="email02">
+                   <label class="custom-control-label" for="email02">You're sent a direct message</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                   <input type="checkbox" class="custom-control-input" id="email03" checked="">
+                   <label class="custom-control-label" for="email03">Someone adds you as a connection</label>
+                </div>
+             </div>
+             <div class="clear-fix"></div>
+            </div>
+      <a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info">Submit</button></a>
+      <a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info btn-info2">Cancel</button></a>
+
+    </form>
+
+</div>
+<div class="Manage-Contact">
+    <form [formGroup]='contactsForm' (ngSubmit)='saveform()'>
+        <div class="form-group col-md-12">
+            <label>Contact Number:</label><br>
+         <input type="text" value="001 2536 123 458" >
+         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">Password Must Start captail Latter</div>
+        </div>
+      
+      <div class="form-group col-md-12">
+       <label>Email:</label>
+        <input type="email" value="Binijone@demo.com" class="form-contol">
+        <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">UserEmail invalid</div>
+
+       </div>
+       <div class="form-group col-md-12">
+        <label>Url:</label>
+         <input type="text" value="https://getbootstrap.com" class="form-contol">
+         <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">Password Must Start captail Latter</div>
+       
+        </div>
+      <a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info">Submit</button></a>
+      <a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info btn-info2">Cancel</button></a>
+
+    </form>
+</div>
+
+
+
+
+<app-footer></app-footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
